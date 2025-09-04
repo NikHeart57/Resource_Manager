@@ -5,17 +5,31 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                              application/Application.o (__do_copy_data)
+                              core/SystemKernel.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                              drivers/UART/UART.o (__do_clear_bss)
+                              core/Scheduler.o (__do_clear_bss)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                              core/Scheduler.o (__do_global_ctors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                              main.o (__do_global_dtors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
 
 Discarded input sections
 
  .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
- .text          0x00000000        0x0 application/Application.o
- .data          0x00000000        0x0 application/Application.o
- .bss           0x00000000        0x0 application/Application.o
+ .text          0x00000000        0x0 core/Scheduler.o
+ .data          0x00000000        0x0 core/Scheduler.o
+ .bss           0x00000000        0x0 core/Scheduler.o
+ .text._ZN10SimpleRTOS9Scheduler11getInstanceEv
+                0x00000000        0x6 core/Scheduler.o
+ .text._ZN10SimpleRTOS9Scheduler4tickEv
+                0x00000000       0x98 core/Scheduler.o
+ .text._ZN10SimpleRTOS9Scheduler11suspendTaskEPFvvE
+                0x00000000      0x12a core/Scheduler.o
+ .text._ZN10SimpleRTOS9Scheduler10resumeTaskEPFvvE
+                0x00000000      0x126 core/Scheduler.o
  .text          0x00000000        0x0 core/SystemKernel.o
  .data          0x00000000        0x0 core/SystemKernel.o
  .bss           0x00000000        0x0 core/SystemKernel.o
@@ -182,6 +196,53 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
 
 Memory Configuration
 
@@ -198,7 +259,7 @@ user_signatures  0x00850000         0x00000400         rw !x
 Linker script and memory map
 
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
-LOAD application/Application.o
+LOAD core/Scheduler.o
 LOAD core/SystemKernel.o
 LOAD drivers/GPIO/GPIO.o
 LOAD drivers/UART/UART.o
@@ -315,7 +376,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x480
+.text           0x00000000      0xb2c
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -338,129 +399,161 @@ END GROUP
  *(.lowtext*)
                 0x00000054                __ctors_start = .
  *(.ctors)
-                0x00000054                __ctors_end = .
-                0x00000054                __dtors_start = .
+ .ctors         0x00000054        0x2 core/Scheduler.o
+ .ctors         0x00000056        0x2 main.o
+                0x00000058                __ctors_end = .
+                0x00000058                __dtors_start = .
  *(.dtors)
-                0x00000054                __dtors_end = .
+ .dtors         0x00000058        0x2 main.o
+                0x0000005a                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000054        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
-                0x00000054                __init
+ .init0         0x0000005a        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x0000005a                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000054        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
+ .init2         0x0000005a        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000060       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x00000060                __do_copy_data
- .init4         0x00000076       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x00000076                __do_clear_bss
+ .init4         0x00000066       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000066                __do_copy_data
+ .init4         0x0000007c       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
+ .init6         0x0000008c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x0000008c                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000086        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
+ .init9         0x000000a2        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  *(.init9)
  *(.text)
- .text          0x0000008e        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
-                0x0000008e                __vector_1
-                0x0000008e                __vector_12
-                0x0000008e                __bad_interrupt
-                0x0000008e                __vector_6
-                0x0000008e                __vector_3
-                0x0000008e                __vector_11
-                0x0000008e                __vector_17
-                0x0000008e                __vector_19
-                0x0000008e                __vector_7
-                0x0000008e                __vector_5
-                0x0000008e                __vector_4
-                0x0000008e                __vector_9
-                0x0000008e                __vector_2
-                0x0000008e                __vector_8
-                0x0000008e                __vector_14
-                0x0000008e                __vector_10
-                0x0000008e                __vector_16
-                0x0000008e                __vector_18
-                0x0000008e                __vector_20
-                0x00000092                . = ALIGN (0x2)
+ .text          0x000000aa        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x000000aa                __vector_1
+                0x000000aa                __vector_12
+                0x000000aa                __bad_interrupt
+                0x000000aa                __vector_6
+                0x000000aa                __vector_3
+                0x000000aa                __vector_11
+                0x000000aa                __vector_17
+                0x000000aa                __vector_19
+                0x000000aa                __vector_5
+                0x000000aa                __vector_4
+                0x000000aa                __vector_9
+                0x000000aa                __vector_2
+                0x000000aa                __vector_8
+                0x000000aa                __vector_14
+                0x000000aa                __vector_10
+                0x000000aa                __vector_16
+                0x000000aa                __vector_18
+                0x000000aa                __vector_20
+                0x000000ae                . = ALIGN (0x2)
  *(.text.*)
- .text._ZN11ApplicationC2ER12SystemKernel
-                0x00000092       0x10 application/Application.o
-                0x00000092                _ZN11ApplicationC2ER12SystemKernel
-                0x00000092                _ZN11ApplicationC1ER12SystemKernel
- .text._ZN11Application3runEv
-                0x000000a2       0x1c application/Application.o
-                0x000000a2                _ZN11Application3runEv
+ .text._ZN10SimpleRTOS9SchedulerC2Ev
+                0x000000ae      0x22c core/Scheduler.o
+                0x000000ae                _ZN10SimpleRTOS9SchedulerC1Ev
+                0x000000ae                _ZN10SimpleRTOS9SchedulerC2Ev
+ .text._ZN10SimpleRTOS9Scheduler4initEv
+                0x000002da       0x16 core/Scheduler.o
+                0x000002da                _ZN10SimpleRTOS9Scheduler4initEv
+ .text.__vector_7
+                0x000002f0       0xd8 core/Scheduler.o
+                0x000002f0                __vector_7
+ .text._ZN10SimpleRTOS9Scheduler8dispatchEv
+                0x000003c8      0x270 core/Scheduler.o
+                0x000003c8                _ZN10SimpleRTOS9Scheduler8dispatchEv
+ .text._ZN10SimpleRTOS9Scheduler7addTaskEPFvvENS_12TaskPriorityE
+                0x00000638       0x90 core/Scheduler.o
+                0x00000638                _ZN10SimpleRTOS9Scheduler7addTaskEPFvvENS_12TaskPriorityE
+ .text._ZN10SimpleRTOS9Scheduler5sleepEm
+                0x000006c8       0x20 core/Scheduler.o
+                0x000006c8                _ZN10SimpleRTOS9Scheduler5sleepEm
+ .text.startup._GLOBAL__sub_I__ZN10SimpleRTOS9SchedulerC2Ev
+                0x000006e8       0x16 core/Scheduler.o
  .text._ZN12SystemKernelC2Ev
-                0x000000be       0x5e core/SystemKernel.o
-                0x000000be                _ZN12SystemKernelC2Ev
-                0x000000be                _ZN12SystemKernelC1Ev
+                0x000006fe       0x5e core/SystemKernel.o
+                0x000006fe                _ZN12SystemKernelC2Ev
+                0x000006fe                _ZN12SystemKernelC1Ev
  .text._ZN12SystemKernel10initializeEv
-                0x0000011c       0x20 core/SystemKernel.o
-                0x0000011c                _ZN12SystemKernel10initializeEv
+                0x0000075c       0x20 core/SystemKernel.o
+                0x0000075c                _ZN12SystemKernel10initializeEv
  .text._ZN12SystemKernel7getUARTEv
-                0x0000013c       0x22 core/SystemKernel.o
-                0x0000013c                _ZN12SystemKernel7getUARTEv
+                0x0000077c       0x22 core/SystemKernel.o
+                0x0000077c                _ZN12SystemKernel7getUARTEv
  .text._ZN12SystemKernel11releaseUARTEv
-                0x0000015e        0x6 core/SystemKernel.o
-                0x0000015e                _ZN12SystemKernel11releaseUARTEv
+                0x0000079e        0x6 core/SystemKernel.o
+                0x0000079e                _ZN12SystemKernel11releaseUARTEv
  .text._Z9UART_Init10UART_Statem13UART_DataBits13UART_StopBits11UART_Parity14UART_Interrupt
-                0x00000164       0xae drivers/UART/UART.o
-                0x00000164                _Z9UART_Init10UART_Statem13UART_DataBits13UART_StopBits11UART_Parity14UART_Interrupt
+                0x000007a4       0xae drivers/UART/UART.o
+                0x000007a4                _Z9UART_Init10UART_Statem13UART_DataBits13UART_StopBits11UART_Parity14UART_Interrupt
  .text._Z12UART_Disablev
-                0x00000212        0x8 drivers/UART/UART.o
-                0x00000212                _Z12UART_Disablev
+                0x00000852        0x8 drivers/UART/UART.o
+                0x00000852                _Z12UART_Disablev
  .text._Z13UART_SendByteh
-                0x0000021a        0x8 drivers/UART/UART.o
-                0x0000021a                _Z13UART_SendByteh
+                0x0000085a        0x8 drivers/UART/UART.o
+                0x0000085a                _Z13UART_SendByteh
  .text.__vector_13
-                0x00000222       0x7c drivers/UART/UART.o
-                0x00000222                __vector_13
+                0x00000862       0x7c drivers/UART/UART.o
+                0x00000862                __vector_13
  .text.__vector_15
-                0x0000029e       0x4e drivers/UART/UART.o
-                0x0000029e                __vector_15
+                0x000008de       0x4e drivers/UART/UART.o
+                0x000008de                __vector_15
+ .text._Z13heartbeatTaskv
+                0x0000092c       0x2c main.o
+                0x0000092c                _Z13heartbeatTaskv
+ .text._Z14sensorReadTaskv
+                0x00000958       0x2c main.o
+                0x00000958                _Z14sensorReadTaskv
  .text.startup.main
-                0x000002ec       0x58 main.o
-                0x000002ec                main
+                0x00000984       0x3a main.o
+                0x00000984                main
+ .text.startup._GLOBAL__sub_I_sysKernel
+                0x000009be        0x8 main.o
+ .text.exit._GLOBAL__sub_D_sysKernel
+                0x000009c6        0x8 main.o
  .text._ZN13UART_ResourceC2ERKNS_6ConfigE
-                0x00000344       0x14 resources/UART_Resource.o
-                0x00000344                _ZN13UART_ResourceC2ERKNS_6ConfigE
-                0x00000344                _ZN13UART_ResourceC1ERKNS_6ConfigE
+                0x000009ce       0x14 resources/UART_Resource.o
+                0x000009ce                _ZN13UART_ResourceC2ERKNS_6ConfigE
+                0x000009ce                _ZN13UART_ResourceC1ERKNS_6ConfigE
  .text._ZN13UART_ResourceD2Ev
-                0x00000358        0xe resources/UART_Resource.o
-                0x00000358                _ZN13UART_ResourceD2Ev
-                0x00000358                _ZN13UART_ResourceD1Ev
+                0x000009e2        0xe resources/UART_Resource.o
+                0x000009e2                _ZN13UART_ResourceD2Ev
+                0x000009e2                _ZN13UART_ResourceD1Ev
  .text._ZN13UART_Resource5startEm
-                0x00000366       0x3a resources/UART_Resource.o
-                0x00000366                _ZN13UART_Resource5startEm
+                0x000009f0       0x3a resources/UART_Resource.o
+                0x000009f0                _ZN13UART_Resource5startEm
  .text._ZN13UART_Resource7printlnEPKc
-                0x000003a0       0x98 resources/UART_Resource.o
-                0x000003a0                _ZN13UART_Resource7printlnEPKc
+                0x00000a2a       0x98 resources/UART_Resource.o
+                0x00000a2a                _ZN13UART_Resource7printlnEPKc
  .text.libgcc.div
-                0x00000438       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00000438                __udivmodsi4
-                0x0000047c                . = ALIGN (0x2)
+                0x00000ac2       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000ac2                __udivmodsi4
+ .text.libgcc   0x00000b06        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x00000b06                __tablejump2__
+                0x00000b12                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000047c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x0000047c                _exit
-                0x0000047c                exit
+ .fini9         0x00000b12        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000b12                _exit
+                0x00000b12                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
+ .fini6         0x00000b12       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000b12                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -473,11 +566,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000047c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000b28        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000480                _etext = .
+                0x00000b2c                _etext = .
 
-.data           0x00800060       0x40 load address 0x00000480
+.data           0x00800060       0x76 load address 0x00000b2c
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -485,44 +578,52 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800060        0x6 application/Application.o
+                0x00800060       0x37 core/SystemKernel.o
  .rodata.str1.1
-                0x00800066       0x37 core/SystemKernel.o
+                0x00800097       0x3c main.o
  .rodata.str1.1
-                0x0080009d        0x3 resources/UART_Resource.o
+                0x008000d3        0x3 resources/UART_Resource.o
  *(.gnu.linkonce.r*)
-                0x008000a0                . = ALIGN (0x2)
-                0x008000a0                _edata = .
-                0x008000a0                PROVIDE (__data_end, .)
+                0x008000d6                . = ALIGN (0x2)
+                0x008000d6                _edata = .
+                0x008000d6                PROVIDE (__data_end, .)
 
-.bss            0x008000a0       0x86
-                0x008000a0                PROVIDE (__bss_start, .)
+.bss            0x008000d6      0x162
+                0x008000d6                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
+ .bss._ZN10SimpleRTOS9schedulerE
+                0x008000d6        0x2 core/Scheduler.o
+                0x008000d6                _ZN10SimpleRTOS9schedulerE
+ .bss._ZN10SimpleRTOSL17schedulerInstanceE
+                0x008000d8       0xcf core/Scheduler.o
  .bss._ZL16uart_rx_callback
-                0x008000a0        0x2 drivers/UART/UART.o
+                0x008001a7        0x2 drivers/UART/UART.o
  .bss._ZL12uart_tx_tail
-                0x008000a2        0x1 drivers/UART/UART.o
+                0x008001a9        0x1 drivers/UART/UART.o
  .bss._ZL12uart_tx_head
-                0x008000a3        0x1 drivers/UART/UART.o
+                0x008001aa        0x1 drivers/UART/UART.o
  .bss._ZL12uart_rx_tail
-                0x008000a4        0x1 drivers/UART/UART.o
+                0x008001ab        0x1 drivers/UART/UART.o
  .bss._ZL12uart_rx_head
-                0x008000a5        0x1 drivers/UART/UART.o
+                0x008001ac        0x1 drivers/UART/UART.o
  .bss._ZL14uart_tx_buffer
-                0x008000a6       0x40 drivers/UART/UART.o
+                0x008001ad       0x40 drivers/UART/UART.o
  .bss._ZL14uart_rx_buffer
-                0x008000e6       0x40 drivers/UART/UART.o
+                0x008001ed       0x40 drivers/UART/UART.o
+ .bss.sysKernel
+                0x0080022d        0xb main.o
+                0x0080022d                sysKernel
  *(COMMON)
-                0x00800126                PROVIDE (__bss_end, .)
-                0x00000480                __data_load_start = LOADADDR (.data)
-                0x000004c0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800238                PROVIDE (__bss_end, .)
+                0x00000b2c                __data_load_start = LOADADDR (.data)
+                0x00000ba2                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800126        0x0
+.noinit         0x00800238        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800126                _end = .
+                0x00800238                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -564,7 +665,7 @@ END GROUP
 
 .comment        0x00000000       0x30
  *(.comment)
- .comment       0x00000000       0x30 application/Application.o
+ .comment       0x00000000       0x30 core/Scheduler.o
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 core/SystemKernel.o
  .comment       0x00000030       0x31 drivers/UART/UART.o

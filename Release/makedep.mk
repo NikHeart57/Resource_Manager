@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-application\Application.cpp
+core\Scheduler.cpp
 
 core\SystemKernel.cpp
 

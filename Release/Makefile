@@ -37,13 +37,12 @@ SUBDIRS :=  \
 ../drivers/GPIO \
 ../drivers/UART \
 ../core \
-../application \
 ../resources
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
-../application/Application.cpp \
+../core/Scheduler.cpp \
 ../core/SystemKernel.cpp \
 ../drivers/GPIO/GPIO.cpp \
 ../drivers/UART/UART.cpp \
@@ -58,7 +57,7 @@ ASM_SRCS +=
 
 
 OBJS +=  \
-application/Application.o \
+core/Scheduler.o \
 core/SystemKernel.o \
 drivers/GPIO/GPIO.o \
 drivers/UART/UART.o \
@@ -66,7 +65,7 @@ main.o \
 resources/UART_Resource.o
 
 OBJS_AS_ARGS +=  \
-application/Application.o \
+core/Scheduler.o \
 core/SystemKernel.o \
 drivers/GPIO/GPIO.o \
 drivers/UART/UART.o \
@@ -74,7 +73,7 @@ main.o \
 resources/UART_Resource.o
 
 C_DEPS +=  \
-application/Application.d \
+core/Scheduler.d \
 core/SystemKernel.d \
 drivers/GPIO/GPIO.d \
 drivers/UART/UART.d \
@@ -82,7 +81,7 @@ main.d \
 resources/UART_Resource.d
 
 C_DEPS_AS_ARGS +=  \
-application/Application.d \
+core/Scheduler.d \
 core/SystemKernel.d \
 drivers/GPIO/GPIO.d \
 drivers/UART/UART.d \
@@ -103,7 +102,7 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
-application/Application.o: ../application/Application.cpp
+core/Scheduler.o: ../core/Scheduler.cpp
 	@echo Building file: $<
 	@echo Invoking: AVR8/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DNDEBUG -DF_CPU=16000000UL  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include"  -O3 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=atmega32 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=c++11 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

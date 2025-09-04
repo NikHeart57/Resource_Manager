@@ -15,7 +15,7 @@ main.d main.o: .././main.cpp .././main.hpp \
  .././core/../resources/../drivers/UART/UART.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
- .././application/Application.hpp
+ .././core/Scheduler.hpp .././core/Task.hpp
 
 .././main.hpp:
 
@@ -53,4 +53,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
 
-.././application/Application.hpp:
+.././core/Scheduler.hpp:
+
+.././core/Task.hpp:

@@ -1,3 +1,7 @@
+/**
+ * SystemKernel не только владельц аппаратных ресурсов (UART, SPI и т.д.), но и владелец и планировщик задач.
+ *
+ */
 #pragma once
 #include "../resources/UART_Resource.hpp"
 #include <stdlib.h>
